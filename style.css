@@ -66,7 +66,6 @@ html {
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 살짝 그림자 추가로 입체감 */
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -207,7 +206,7 @@ main {
 .home-section {
   display: flex;
   align-items: center;
-  justify-content: cennter;
+  justify-content: center; /* 오타 수정 (cennter -> center) */
   position: relative;
   overflow: hidden;
   padding-top: 85px;
@@ -413,7 +412,7 @@ main {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding-top: 85px;
+  padding-top: 50px;
   padding-bottom: 85px;
   min-height: 100vh;
 }
@@ -448,13 +447,11 @@ main {
   border-radius: 1rem;
   border: 1px solid rgb(163, 163, 163);
   text-align: center;
-  flex: 1; 
-  max-width: 1050px; 
-  height: auto; 
-  min-height: 200px; 
-  white-space: nowrap;
-  flex: none; 
-  width: auto;
+  max-width: 1050px;
+  height: auto;
+  min-height: 200px;
+  white-space: nowrap; /* 줄바꿈 방지 */
+  width: auto; /* 자동 크기 조정 */
 }
 
 .section-container {
@@ -475,6 +472,6 @@ main {
 
 .arrow {
   position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+  right: 2rem;
+  bottom: 2rem;
 }
