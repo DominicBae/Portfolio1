@@ -397,10 +397,10 @@ main {
 
 @media (max-width: 990px) and (min-width: 768px) {
   .home-intro h6 {
-    font-size: 18px; /* 텍스트 크기를 조정 */
+    font-size: 18px;
   }
   .home-intro {
-    padding-top: 20px; /* 위쪽 여백 줄임 */
+    padding-top: 20px;
   }
 }
 
@@ -474,4 +474,76 @@ main {
   position: absolute;
   right: 2rem;
   bottom: 2rem;
+}
+
+/* 모바일 화면용 스타일 */
+@media (max-width: 767px) {
+  #about {
+    flex-direction: column; /* 세로 정렬 */
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .about-containers {
+    flex-direction: column; /* 모바일에서 세로 정렬 */
+    gap: 1rem; /* 간격 조정 */
+  }
+
+  .about-details-container {
+    flex-direction: column; /* 모바일에서 세로 정렬 */
+    align-items: center;
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+
+  .details-container {
+    width: 100%; /* 너비를 100%로 설정하여 화면을 꽉 채움 */
+    max-width: 100%; /* 최대 너비 조정 */
+    padding: 1rem; /* 패딩 조정 */
+    margin-bottom: 1rem; /* 하단 여백 */
+  }
+
+  .about-pic {
+    width: 100%; /* 이미지를 화면에 맞게 조정 */
+    max-width: 300px; /* 최대 이미지 크기 */
+    margin-bottom: 1rem; /* 하단 여백 */
+  }
+  
+  .text-container p {
+    font-size: 1rem; /* 모바일에서 텍스트 크기 조정 */
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
 }
