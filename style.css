@@ -1,4 +1,9 @@
 /* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --primary-color: #ff651c;
   --dark-color: #373737;
@@ -8,6 +13,8 @@ body {
   font-family: "Jost", sans-serif;
   font-weight: 400;
   color: #555;
+  margin: 0;
+  padding: 0;
 }
 
 .section-container {
@@ -206,7 +213,7 @@ main {
 .home-section {
   display: flex;
   align-items: center;
-  justify-content: center; /* 오타 수정 (cennter -> center) */
+  justify-content: center;
   position: relative;
   overflow: hidden;
   padding-top: 85px;
@@ -507,7 +514,7 @@ main {
     max-width: 300px; /* 최대 이미지 크기 */
     margin-bottom: 1rem; /* 하단 여백 */
   }
-  
+
   .text-container p {
     font-size: 1rem; /* 모바일에서 텍스트 크기 조정 */
   }
@@ -524,12 +531,6 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
   #experience,
   .experience-details-container {
     margin-top: 2rem;
@@ -546,4 +547,37 @@ main {
     height: 275px;
     margin: 0 auto 2rem;
   }
+}
+
+/* SKILL SECTION */
+.skills-section {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  min-height: 100vh;
+}
+
+.skills-container {
+  width: 350px;
+  height: 500px;
+}
+
+
+.card {
+  height: 100%;
+  width: 100%;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+}
+
+.front {
+  background-image: url(./images/HTML5_logo.png);
 }
